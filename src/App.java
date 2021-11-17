@@ -7,18 +7,18 @@ public class App {
 
     private static void ReadJSON(){
 
-        // JSONParser parser = new JSONParser();
-        // Object obj = parser.parse(new FileReader(JSONpath));
-        // JSONArray json = (JSONArray) obj;
+        JSONParser parser = new JSONParser();
+        Object obj = parser.parse(new FileReader(JSONpath));
+        JSONArray json = (JSONArray) obj;
 
-        // for (int i = 0; i < json.size(); i++) {
+        for (int i = 0; i < json.size(); i++) {
 
-        // JSONObject object =(JSONObject) json.get(i);
+        JSONObject object =(JSONObject) json.get(i);
         //ejemplos que hay q sustituir por nuestras columnas
-        // String clave = object.get("points").toString();  
-        // String title = object.get("title").toString();  
-        // System.err.println("points:"+clave);
-        // System.err.println("title:"+title);
+        String clave = object.get("points").toString();  
+        String title = object.get("title").toString();  
+        System.err.println("points:"+clave);
+        System.err.println("title:"+title);
 
     }
     
